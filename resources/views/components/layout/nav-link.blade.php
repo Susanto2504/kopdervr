@@ -1,0 +1,2 @@
+@props(['href', 'active' => false])
+<a href="{{ $href }}" {{ $attributes->merge(['class' => $active ? 'mb-1 flex items-center gap-3 rounded-lg bg-[#DF301C] px-3 py-3 text-sm font-medium text-white' : 'mb-1 flex items-center gap-3 rounded-lg px-3 py-3 text-sm text-gray-400 transition hover:bg-white/5 hover:text-white']) }}> {{ $slot }} </a> 
